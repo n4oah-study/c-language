@@ -49,3 +49,9 @@ operator.c: 구조체/공용체 멤버 접근자 .과 ->
 - 스택 메모리의 크기는 프로그램 빌드 시에 결정 됨
 - 스택 메모리의 위치는 실행 시에 결정됨
 - 함수가 실행될 때 마다 스택이 할당 됨
+![stack-memory-images](https://raw.githubusercontent.com/n4oah-study/c-language/master/basic01/imgs/%EC%8A%A4%ED%83%9D%EB%A9%94%EB%AA%A8%EB%A6%AC2.PNG)
+- Stack 메모리는 큰 주소에서 작은 주소로 쌓임
+  - 0x00FFFFFF -> 0x00FF00000 순서
+- ESP: 현재 스택 포인터
+- EBP 현재 <u>스택 프레임의 기본(첫) 주소</u>(입구?)
+- 스택 프레임(Stack Frame): 각 함수가 사용하는  스택 메모리의 범위
